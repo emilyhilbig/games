@@ -1,0 +1,45 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>tictactoe</title>
+	
+	<style type="text/css">
+		.gameBoard td{
+			border-collapse: collapse;
+			border:#4e95f4 1px solid;
+			text-align: center;
+			width: 50px;
+			height: 50px;
+		}
+		.gameBoard{
+			width: 150px;
+			height: 150px;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+<h1>Tic-Tac-Toe</h1>
+<table class="gameBoard" id="mainTable">
+	<tr>
+		<td id="topleft" onclick="markSquare(this)"></td>
+		<td id="topcenter" onclick="markSquare(this)"></td>
+		<td id="topright" onclick="markSquare(this)"></td>
+	</tr>
+	<tr>
+		<td id="midleft" onclick="markSquare(this)"></td>
+		<td id="midcenter" onclick="markSquare(this)"></td>
+		<td id="midright"onclick="markSquare(this)"></td>
+	</tr>
+	<tr>
+		<td id="bottomleft" onclick="markSquare(this)"></td>
+		<td id="bottomcenter" onclick="markSquare(this)"></td>
+		<td id="bottomright"onclick="markSquare(this)"></td>
+	</tr>
+</table>
+
+<button onclick="initializeGame()">RESTART GAME</button>
+
+<script src="js/tictactoe.js" type="text/javascript"></script>
+</body>
+</html>
